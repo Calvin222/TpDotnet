@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Company.Models.T_Company>
+@{
+    ViewData["Title"] = "Liste";
+}
+
+<h1>Liste</h1>
+
+<p>Ici la liste de tous les Companys déjà enregistrés.</p>
+@foreach(var item in Model)
+{
+    <p>@item.Id</p>
+    <p>@item.Nom</p>
+    <img src=@item.Lienversphoto />
+    <br />
+    <br />
+}
+
+

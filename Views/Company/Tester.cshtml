@@ -1,0 +1,12 @@
+﻿@model List<ListeCompanys>
+@{
+    ViewData["Title"] = "Tester";
+}
+
+<h1>Tests divers pour la phase de développement</h1>
+
+
+@foreach(var item in Model)
+{
+    <p>@item.NomCompany</p>
+}
